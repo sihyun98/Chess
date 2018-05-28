@@ -21,7 +21,7 @@ public class ImagePanel extends JPanel {
 	private static final long serialVersionUID = 1241885397633460571L;
 	BufferedImage image;
 	public ImagePanel() {
-		setOpaque(false);//¹è°æ»öÀÌ Åõ¸í
+		setOpaque(false);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 	public void setImage(BufferedImage image) {
 		this.image = image;
@@ -45,14 +45,5 @@ public class ImagePanel extends JPanel {
 			g.drawImage(image, (getWidth()-w)/2,(getHeight()-h)/2,w,h, this);
 		}
 	}
-	 public static void main(String[] args) {
-	        JFrame mainframe = new JFrame("Chess");
-	    	Block chessMap = new Block();
-	        mainframe.add(chessMap.getGui());
-	        mainframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-	        mainframe.pack();
-	        mainframe.setMinimumSize(mainframe.getSize());
-	        mainframe.setVisible(true);
-	    }
 }
 
