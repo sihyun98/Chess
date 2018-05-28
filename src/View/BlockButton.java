@@ -35,13 +35,4 @@ public class BlockButton {
     public JComponent getGui() {
         return gui;
     }
-    public static void main(String[] args) {
-        JFrame mainframe = new JFrame("Chess");
-    	BlockButton chessMap = new BlockButton();
-        mainframe.add(chessMap.getGui());
-        mainframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        mainframe.pack();
-        mainframe.setMinimumSize(mainframe.getSize());
-        mainframe.setVisible(true);
-    }
 }
