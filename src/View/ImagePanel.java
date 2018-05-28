@@ -15,7 +15,6 @@ import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.*;
-import Model.Block;
 
 public class ImagePanel extends JPanel {
 	private static final long serialVersionUID = 1241885397633460571L;

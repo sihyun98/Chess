@@ -2,8 +2,6 @@ package View;
 
 import javax.swing.JFrame;
 
-import Model.Block;
-
 public class Main {
 	public static void main(String[] args) {
         new MainFrame("Chess");
@@ -11,11 +9,11 @@ public class Main {
 }
 
 class MainFrame extends JFrame {
-	Block chessMap;
+	BlockButton chessMap;
 	
 	public MainFrame(String title) {
 		super(title);
-		chessMap = new Block();
+		chessMap = new BlockButton();
 		add(chessMap.getGui());
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
